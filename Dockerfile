@@ -4,7 +4,9 @@ RUN apt -y update && apt -y install \
     vim \
     netcat-traditional \
     procps \
-    dnsutils
+    dnsutils \
+    traceroute \
+    iputils-ping
 
 ENTRYPOINT [ "bash", "-c" ]
 
