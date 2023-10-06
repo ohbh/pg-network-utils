@@ -1,12 +1,13 @@
 FROM postgres:15
 
 RUN apt -y update && apt -y install \
-    vim \
+    curl \
+    dnsutils \
+    iputils-ping \
     netcat-traditional \
     procps \
-    dnsutils \
     traceroute \
-    iputils-ping
+    vim
 
 ENTRYPOINT [ "bash", "-c" ]
 
