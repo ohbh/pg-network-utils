@@ -7,7 +7,8 @@ RUN apt -y update && apt -y install \
     netcat-traditional \
     procps \
     traceroute \
-    vim
+    vim \
+    zx
 
 ENTRYPOINT [ "bash", "-c" ]
 
